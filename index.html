@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindAdmin</title>
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="containers">
+                <div class="logo">
+                    <img src="assets/imgs/logo.png" alt="">
+
+                </div>
+
+
+                <div class="search">
+                    <div class="icon"><i class="fa-brands fa-sistrix"></i></div>
+
+                    <input type="search" placeholder="Search">
+                </div>
+            </div>
+            <div class="container">
+                <div class="button">
+                    <button type="button">Check Pro Version</button>
+                </div>
+                <div class="night">
+                  <i class="fa-regular fa-moon"></i>
+                </div>
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <div class="dot">
+                        <img src="assets/imgs/dot.png" alt="">
+                    </div>
+                </div>
+                <div class="imgs">
+                    <img src="assets/imgs/user-1.jpg" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="sidedrawer" id="sidedrawer">
+        <div class="home">
+            <h5>HOME</h5>
+            <div class="homelink">
+
+                <h4 class="active"> <i class="fa-solid fa-table-cells-large"></i> Modern</h4>
+
+                <h4> <i class="fa-solid fa-basket-shopping"></i> E-Commerce</h4>
+                <p class="para">Pro</p>
+
+                <h4> <i class="fa-brands fa-itunes-note"></i> Music</h4>
+                <p class="para">Pro</p>
+
+                <h4> <i class="fa-solid fa-chart-simple"></i>General</h4>
+                <p class="para">Pro</p>
+
+                <h4> <i class="fa-regular fa-file"></i> Frontend Pages</h4>
+                <button onclick="button(this)"><i class="fa-solid fa-angle-down"></i></button>
+                <div class="ul">
+                    <ul>
+                        <li>Home Page <p class="para">Pro</p>
+                        </li>
+                        <li>About Us <p class="para">Pro</p>
+                        </li>
+                        <li>Blog <p class="para">Pro</p>
+                        </li>
+                        <li>Blog Detail <p class="para">Pro</p>
+                        </li>
+                        <li>Portfolio <p class="para">Pro</p>
+                        </li>
+                        <li>Pricing <p class="para">Pro</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ui">
+                <h5>UI</h5>
+                <div class="uilinks">
+                    <h4><i class="fa-solid fa-share-nodes"></i> UI Elements</h4>
+                    <button onclick="button(this)"><i class="fa-solid fa-angle-down"></i></button>
+                    <div class="ul">
+                        <ul>
+                            <li class="li">Home Page</li>
+                            <li class="li">About Us </li>
+                            <li class="li">Blog </li>
+                            <li class="li">Blog Detail </li>
+                            <li class="li">Portfolio </li>
+                            <li class="li">Pricing </li>
+                            <li>Home Page <p class="para">Pro</p>
+                            </li>
+                            <li>About Us <p class="para">Pro</p>
+                            </li>
+                            <li>Blog <p class="para">Pro</p>
+                            </li>
+                            <li>Blog Detail <p class="para">Pro</p>
+                            </li>
+                            <li>Portfolio <p class="para">Pro</p>
+                            </li>
+                            <li>Pricing <p class="para">Pro</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <h4><i class="fa-regular fa-credit-card"></i> Cards</h4>
+                        <button onclick="button(this)"><i class="fa-solid fa-angle-down"></i></button>
+                        <div class="ul">
+                            <ul>
+                                <li>Basic Cards<p class="para">Pro</p>
+                                </li>
+                                <li>Custom Cards <p class="para">Pro</p>
+                                </li>
+                                <li>Weather <p class="para">Pro</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="apps">
+                <h5>Apps</h5>
+                <div class="applinks">
+                    <h4><i class="fa-regular fa-calendar"></i> Calendar <p class="para">Pro</p>
+                    </h4>
+                    <h4><i class="fa-regular fa-calendar"></i> Calendar <p class="para">Pro</p>
+                    </h4>
+                    <h4><i class="fa-regular fa-calendar"></i> Calendar <p class="para">Pro</p>
+                    </h4>
+                    <h4><i class="fa-regular fa-calendar"></i> Calendar <p class="para">Pro</p>
+                    </h4>
+                    <h4><i class="fa-regular fa-calendar"></i> Calendar <p class="para">Pro</p>
+                    </h4>
+                    <h4><i class="fa-regular fa-calendar"></i> Calendar <p class="para">Pro</p>
+                    </h4>
+                    <h4><i class="fa-regular fa-calendar"></i> Calendar <p class="para">Pro</p>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="text">
+                <h3>Havent</h3>
+                <h3>Account?</h3>
+                <button class="button">Get Pro</button>
+            </div>
+            <div class="img">
+                <img src="assets/imgs/rocket.png" alt="">
+            </div>
+        </div>
+    </div>
+    <main id="main">
+        <section class="welcome">
+            <div class="text1">
+                <img src="assets/imgs/user-1.jpg" alt="">
+                <h3>Welcome Back! John 👋</h3>
+                <p>Check your reports</p>
+            </div>
+            <div class="image">
+                <img src="assets/imgs/girl.png" alt="">
+            </div>
+        </section>
+        <section class="project">
+            <div class="slider">
+                <div class="group">
+                    <div class="projects">
+
+                        <img src="assets/imgs/project.png" alt="">
+                        <h3>Projects</h3>
+                        <h4>986</h4>
+                    </div>
+                    <div class="clients">
+                        <img src="assets/imgs/clients.png" alt="">
+                        <h3>Clients</h3>
+                        <h4>806</h4>
+                    </div>
+                    <div class="events">
+                        <img src="assets/imgs/events.png" alt="">
+                        <h3>Events</h3>
+                        <h4>675</h4>
+                    </div>
+                    <div class="payroll">
+                        <img src="assets/imgs/payroll.png" alt="">
+                        <h3>Payroll</h3>
+                        <h4>564</h4>
+                    </div>
+                    <div class="reports">
+                        <img src="assets/imgs/reports.png" alt="">
+                        <h3>Report</h3>
+                        <h4>96</h4>
+                    </div>
+                    <div class="employes">
+                        <img src="assets/imgs/employes.png" alt="">
+                        <h3>Employes</h3>
+                        <h4>167</h4>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="projects">
+                        <img src="assets/imgs/project.png" alt="">
+                        <h3>Projects</h3>
+                        <h4>986</h4>
+                    </div>
+                    <div class="clients">
+                        <img src="assets/imgs/clients.png" alt="">
+                        <h3>Clients</h3>
+                        <h4>806</h4>
+                    </div>
+                    <div class="events">
+                        <img src="assets/imgs/events.png" alt="">
+                        <h3>Events</h3>
+                        <h4>675</h4>
+                    </div>
+                    <div class="payroll">
+                        <img src="assets/imgs/payroll.png" alt="">
+                        <h3>Payroll</h3>
+                        <h4>564</h4>
+                    </div>
+                    <div class="reports">
+                        <img src="assets/imgs/reports.png" alt="">
+                        <h3>Report</h3>
+                        <h4>96</h4>
+                    </div>
+                    <div class="employes">
+                        <img src="assets/imgs/employes.png" alt="">
+                        <h3>Employes</h3>
+                        <h4>167</h4>
+                    </div>
+                </div>
+        </section>
+        <section class="chart">
+            <div class="charts">
+            <div class="revenueupdate">
+                <div class="heading">
+                    <h3>Revenue Updates</h3>
+                    <p>Overview of Profit</p>
+                </div>
+                <div class="select">
+                    <select name="" id="">
+                        <option value="Year 2026" selected>Year 2026</option>
+                        <option value="Year 2025">Year 2025</option>
+                        <option value="Year 2024">Year 2024</option>
+                    </select>
+                </div>
+            </div>
+            <div class="chart">
+                <div class="box1"></div>
+                <p class="para">3k</p>
+                <div class="box1"></div>
+                <p class="para">2k</p>
+                <div class="box1"></div>
+                <p class="para">1k</p>
+                <div class="box1"></div>
+                <p class="para">0k</p>
+                <div class="box1"></div>
+                <p class="para">-1k</p>
+                <div class="box1"></div>
+                <p class="para">-2k</p>
+                <div class="box1"></div>
+                <p class="para">-3k</p>
+                <div class="month">
+                    <p class="paraa ">Jan</p>
+                    <p class="paraa">Feb</p>
+                    <p class="paraa">Mar</p>
+                    <p class="paraa">Apr</p>
+                    <p class="paraa">May</p>
+                    <p class="paraa">June</p>
+                    <p class="paraa">July</p>
+                    <p class="paraa">Aug</p>
+                    <p class="paraa">Sep</p>
+                    <p class="paraa">Oct</p>
+                    <p class="paraa">Nov</p>
+                    <p class="paraa">Dec</p>
+                </div>
+                <div class="bar">
+                    <div class="bar1">
+                        <div class="div1" data-month="Jan" data-value = "Earning :1800k"></div>
+                        <div class="div2" data-month="Jan" data-value = "Expenses :-1800k"></div>
+                    </div>
+
+                    <div class="bar2">
+                        <div class="div3" data-month="Feb" data-value = "Earning :1900k"></div>
+                        <div class="div4" data-month="Feb" data-value = "Expence :-2100k"></div>
+                    </div>
+                    <div class="bar3">
+                        <div class="div5" data-month="Mar" data-value = "Earning :1800k"></div>
+                        <div class="div6" data-month="Mar" data-value = "Expense :-3500k"></div>
+                    </div>
+                    <div class="bar4">
+                        <div class="div7" data-month="Apr" data-value = "Earning :2500k"></div>
+                        <div class="div8" data-month="Apr" data-value = "Expense :-1800k"></div>
+                    </div>
+                    <div class="bar5">
+                        <div class="div9" data-month="May" data-value = "Earning :2300k"></div>
+                        <div class="div10" data-month="May" data-value = "Expense :-3000k"></div>
+                    </div>
+                    <div class="bar6">
+                        <div class="div11" data-month="June" data-value = "Earning :2600k"></div>
+                        <div class="div12" data-month="June" data-value = "Expense :-700k"></div>
+                    </div>
+                    <div class="bar7">
+                        <div class="div13" data-month="July" data-value = "Earning :2200k"></div>
+                        <div class="div14" data-month="July" data-value = "Expense :-2600k"></div>
+                    </div>
+                    <div class="bar8">
+                        <div class="div15" data-month="Aug" data-value = "Earning :2300k"></div>
+                        <div class="div16" data-month="Aug" data-value = "Expense :-500k"></div>
+                    </div>
+                    <div class="bar9">
+                        <div class="div17" data-month="Sep" data-value = "Earning :2800k"></div>
+                        <div class="div18" data-month="Sep" data-value = "Expense :-1100k"></div>
+                    </div>
+                    <div class="bar10">
+                        <div class="div19" data-month="Oct" data-value = "Earning :2300k"></div>
+                        <div class="div20" data-month="Oct" data-value = "Expense :-1400k"></div>
+                    </div>
+                    <div class="bar11">
+                        <div class="div21" data-month="Nov" data-value = "Earning :1400k"></div>
+                        <div class="div22" data-month="Nov" data-value = "Expense :-2000k"></div>
+                    </div>
+                    <div class="bar12">
+                        <div class="div23" data-month="Dec" data-value = "Earning :2500k"></div>
+                        <div class="div24" data-month="Dec" data-value = "Expense :-3800k"></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="textbox">
+                <h4 id="h4"></h4>
+                <p id="p"></p>
+            </div>
+            </div>
+            </div>
+            <div class="yearlybreakup">
+<div class="texts">
+    <h3>Yearly Breakups</h3>
+    <h4>$36,358</h4>
+    <div class="dott"><i class="fa-solid fa-reply"></i></div>
+    <p class="nine">+9%</p> <p class="last">last year</p>
+    <div class="years">
+    <div class="dot1"></div><p class="2023">2023</p>
+   <div class="dot2"></div> <p class="2024">2024</p>
+   <div class="dot3"></div> <p class="2025">2025</p>
+   </div>
+</div>
+<div class="graphs">
+    <div class="graph"></div>
+</div>
+            </div>
+            <div class="yearlysbreakup">
+<div class="texts">
+    <h3>Monthly Earning</h3>
+    <h4>$6,820</h4>
+    <div class="dott1"><i class="fa-solid fa-down-long"></i></div>
+    <p class="nine">+9%</p> <p class="last">last year</p>
+    </div>
+    <div class="dollar">
+        <h4>$</h4>
+    </div>
+    <div class="chartbox">
+        <div class="tooltip">● Earnings: 40</div>
+<svg viewBox = '0 0 100 30'>
+<defs>
+<linearGradient id = "grad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset = "0%" stop-color="#38bdf8" stop-opacity="0.3" />
+    <stop offset = "100%" stop-color="#38bdf8" stop-opacity="0" />
+</linearGradient>
+</defs>
+
+<path class="line" d="M0,15 C20,0 30,30 50,15 C70,0 80,30 100,15" />
+<circle class="point" cx="25" cy="7" r="2.5" />
+<circle class="point" cx="50" cy="15" r="2.5" />
+<circle class="point" cx="75" cy="7" r="2.5" />
+</svg>
+
+
+    </div>
+            </div>
+        </section>
+        <section class="lastsec">
+            <div class="lastperformance">
+<div class="transaction">
+    <h3>Recent Transaction</h3>
+    <h4>How to Secure Recent Transactions</h4>
+</div>
+<div class="works">
+    <p class="time">09:30</p>
+    <div class="timedot"></div>
+    <p class="description">Payment received from John Doe of $385.90</p>
+</div>
+<div class="works">
+    <p class="time">10:30</p>
+    <div class="timedot"></div>
+   
+    <p class="description"><span class="one">New sale recorded</span>
+#ML-3467</p>
+</div>
+<div class="works">
+    <p class="time">12:30</p>
+    <div class="timedot"></div>
+    <p class="description">Payment was made of $64.95 to Michael</p>
+</div>
+<div class="works">
+    <p class="time">08:30</p>
+    <div class="timedot"></div>
+    <p class="description">Payment received from John Doe of $385.90</p>
+</div>
+<div class="works">
+    <p class="time">10:30</p>
+    <div class="timedot"></div>
+   
+    <p class="description"><span class="one">New sale recorded</span>
+#ML-3467</p>
+</div>
+<div class="works">
+    <p class="time">1:30</p>
+    <div class="timedot"></div>
+    <p class="description">Payment was made of $64.95 to Michael</p>
+</div>
+</div>
+<div class="popular">
+    <h3 class="product">Product Performance</h3>
+    <div class="row1">
+        <p class="rowtext">Id</p>
+        <p class="rowtext">Assigned</p>
+        <p class="rowtext"> Name</p>
+        <p class="rowtext">Priority</p>
+        <p class="rowtext">Budget</p>
+    </div>
+     <div class="row1">
+        <p class="rowtext1">1</p>
+        <p class="rowtext1">Sunil Joshi <span class="description2">Web Designer </span></p>
+        <p class="description">Real Homes WP Theme</p>
+        <p class="divtext">Low</p>
+        <p class="description">$3.9K</p>
+    </div>
+ <div class="row1">
+        <p class="rowtext1">2</p>
+        <p class="rowtext1">Sunil Joshi <span class="description2">Web Designer </span></p>
+        <p class="description"> MedicalPro WP Theme</p>
+        <p class="divtext2">Medium</p>
+        <p class="description">$3.9K</p>
+    </div>
+     <div class="row1">
+        <p class="rowtext1">3</p>
+        <p class="rowtext1">Sunil Joshi <span class="description2">Web Designer </span></p>
+        <p class="description"> Hosting Press HTML</p>
+        <p class="divtext3">Low</p>
+        <p class="description">$3.9K</p>
+    </div>
+     <div class="row1">
+        <p class="rowtext1">4</p>
+        <p class="rowtext1">Sunil Joshi <span class="description2">Web Designer </span></p>
+        <p class="description"> Helping Hands WP Theme</p>
+        <p class="divtext4">High</p>
+        <p class="description">$3.9K</p>
+    </div>
+
+</div>
+
+        </section>
+    </main>
+    <footer>
+        <p>Design and Developed by <a href="#">tailwind-admin.com </a> • Distributed by <a href="#">ThemeWagon</a></p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

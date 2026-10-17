@@ -1,0 +1,1331 @@
+@import url(default.css);
+
+header {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    z-index: 100;
+    background: var(--navbar);
+}
+
+header nav {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.containers {
+    display: flex;
+    gap: 20px;
+}
+
+header nav .logo {
+    padding: 5px;
+}
+
+header nav .search {
+    width: 43%;
+    padding-top: 7px;
+    margin-top: 10px;
+    display: flex;
+    border: 1px solid var(--borders);
+    height: 40px;
+    border-radius: 9px;
+    margin-left: 20px;
+}
+
+header nav .search input {
+    padding: 9px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+header nav .search .icon {
+    padding-top: 4px;
+    padding-right: 5px;
+    padding-left: 15px;
+}
+
+header nav .search .icon i {
+    font-size: 20px;
+    font-weight: 900;
+
+}
+
+header nav .container {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    padding-top: 5px;
+    position: relative;
+
+}
+
+header nav .container .button {
+    width: 50%;
+    position: relative;
+    left: 10%;
+
+}
+
+.container .button button {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 20px;
+
+    background:
+        linear-gradient(var(--gradient), var(--gradient)) padding-box,
+        radial-gradient(100% 707.08% at 20% 20%,
+            var(--button-gr) 20%,
+           var(--button-gra) 33.82%,
+           var(--button-grad)  72.12%,
+           var(--button-gradi)  100%) border-box;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .night {
+    width: 50px;
+}
+
+.container .night i {
+    font-size: 28px;
+    position: relative;
+    left: 73%;
+    top: 26%;
+}
+
+.container .notification {
+    width: 50px;
+    position: relative;
+    left: 5%;
+}
+
+.container .notification i {
+    width: 100%;
+    font-size: 25px;
+    position: relative;
+    top: 27%;
+
+}
+
+.container .notification .dot {
+    width: 15px;
+    position: relative;
+    left: 35%;
+    bottom: 45%;
+}
+
+.container .notification .dot img {
+    width: 100%;
+
+}
+
+.container .imgs {
+    width: 35px;
+    height: 35px;
+    position: relative;
+
+    top: 13%;
+}
+
+.container .imgs img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--borders);
+    border-radius: 50%;
+}
+
+
+
+.sidedrawer {
+    position: fixed;
+    top: 70px;
+    left: 2%;
+    width: 220px;
+    height: calc(100vh - 70px);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sidedrawer .home {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    position: relative;
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidedrawer .home::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidedrawer .home::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar);
+    border-radius: 10px;
+}
+
+.sidedrawer .home::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.sidedrawer .home::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.sidedrawer .home h5 {
+    font-size: 13px;
+    position: relative;
+    left: 3%;
+    margin-bottom: 15px;
+}
+
+.sidedrawer .home h4 {
+    font-size: 13px;
+    font-weight: normal;
+    margin-left: 32px;
+    border-radius: 10px;
+    padding-left: 10px;
+    position: relative;
+    right: 15%;
+}
+
+.sidedrawer .home h4 i {
+    position: relative;
+    right: 2%;
+
+}
+
+.active {
+    background-color: var(--modern);
+    color: var(--modern-text);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    letter-spacing: 1px;
+
+}
+
+.home .homelink .para {
+    font-size: 10px;
+    position: relative;
+    left: 75%;
+    bottom: 20px;
+    background-color: var(--pro);
+    color: var(--pro-text);
+    width: 27px;
+    padding: 6px;
+    border-radius: 10px;
+
+}
+
+.home .homelink ul li .para {
+    font-size: 10px;
+    position: relative;
+    left: 60%;
+    bottom: 20px;
+    background-color: var(--pro);
+    color: var(--pro-text);
+    width: 27px;
+    padding: 6px;
+    border-radius: 10px;
+
+}
+
+.ui .uilinks .para {
+    font-size: 10px;
+    position: relative;
+    left: 60%;
+    bottom: 20px;
+    background-color: var(--pro);
+    color: var(--pro-text);
+    width: 27px;
+    padding: 6px;
+    border-radius: 10px;
+
+}
+
+.apps .applinks .para {
+    font-size: 10px;
+    position: relative;
+    left: 87%;
+    bottom: 20px;
+    background-color: var(--pro);
+    color: var(--pro-text);
+    width: 27px;
+    padding: 6px;
+    border-radius: 10px;
+
+}
+
+.sidedrawer .home button i {
+    padding: 2px;
+    font-size: 17px;
+
+}
+
+.sidedrawer .home button {
+    border: 1px solid transparent;
+    background-color: transparent;
+    position: relative;
+    left: 75%;
+    bottom: 20px;
+}
+
+.home .ul {
+    width: 220px;
+
+}
+
+.home ul {
+    width: 100%;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.home ul li {
+    list-style-type: circle;
+
+}
+
+.uilinks .ul .li {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.applinks h4 {
+    margin-bottom: 10px;
+}
+
+.box {
+    margin-top: auto;
+    flex-shrink: 0;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    background-color: var(--box);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.box .button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--box-bg);
+    color: var(--navbar);
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.box .img img {
+    position: relative;
+    bottom: 25%;
+    right: 5%;
+    width: 90px;
+}
+
+.ul ul li:hover {
+    cursor: pointer;
+    color: var(--modern);
+}
+
+h4:hover {
+
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+main {
+    position: relative;
+    
+
+    left: 19.5%;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+main .welcome {
+    width: 80%;
+    background-color: var(--welcome-box);
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.text1 {
+    position: relative;
+    bottom: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.welcome .text1 img {
+    width: 45px;
+    height: 45px;
+    border: 1px solid var(--borders);
+    border-radius: 50%;
+}
+
+.welcome .text1 h3 {
+    position: relative;
+    left: 30%;
+    bottom: 190%;
+    font-size: 15px;
+}
+
+.welcome .text1 p {
+    font-size: 13px;
+    position: relative;
+    bottom: 180%;
+    left: 34%;
+    color: var(--scrollbar);
+}
+
+.welcome .image {
+    width: 13%;
+    height: 70px;
+    position: relative;
+    bottom: 58%;
+    left: 3%;
+}
+
+.welcome .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 200px;
+
+}
+
+.project .projects,
+.project .payroll,
+.project .reports,
+.project .events,
+.project .clients,
+.project .employes {
+    flex-shrink: 0;
+
+    height: 160px;
+    margin-top: 20px;
+}
+
+.project .projects {
+    margin-top: 20px;
+    background-color: var(--projects);
+    height: 160px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project .payroll {
+    margin-top: 20px;
+    background-color: var(--payroll);
+
+    height: 160px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project .reports {
+    margin-top: 20px;
+    background-color: var(--report);
+    height: 160px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project .events {
+    margin-top: 20px;
+    background-color: var(--events);
+    height: 160px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project .clients {
+    margin-top: 20px;
+    background-color: var(--clients);
+    height: 160px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project .employes {
+    margin-top: 20px;
+    background-color: var(--employees);
+    height: 160px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects img {
+
+    width: 50px;
+    margin: 15px auto;
+}
+
+.projects h3 {
+    font-size: 15px;
+    margin: 0 auto;
+    color: var(--h3);
+}
+
+.projects h4 {
+    font-size: 19px;
+    margin: 10px auto;
+    color: var(--h3);
+}
+
+.reports img {
+
+    width: 50px;
+    margin: 15px auto;
+}
+
+.reports h3 {
+    font-size: 15px;
+    margin: 0 auto;
+    color: var(--h3);
+}
+
+.reports h4 {
+    font-size: 19px;
+    margin: 10px auto;
+    color: var(--h3);
+}
+
+.events img {
+
+    width: 50px;
+    margin: 15px auto;
+}
+
+.events h3 {
+    font-size: 15px;
+    margin: 0 auto;
+    color: var(--h3);
+}
+
+.events h4 {
+    font-size: 19px;
+    margin: 10px auto;
+    color: var(--h3);
+}
+
+.payroll img {
+
+    width: 50px;
+    margin: 15px auto;
+}
+
+.payroll h3 {
+    font-size: 15px;
+    margin: 0 auto;
+    color: var(--h3);
+}
+
+.payroll h4 {
+    font-size: 19px;
+    margin: 10px auto;
+    color: var(--h3);
+}
+
+.clients img {
+
+    width: 50px;
+    margin: 15px auto;
+}
+
+.clients h3 {
+    font-size: 15px;
+    margin: 0 auto;
+    color: var(--h3);
+}
+
+.clients h4 {
+    font-size: 19px;
+    margin: 10px auto;
+    color: var(--h3);
+}
+
+.employes img {
+
+    width: 50px;
+    margin: 15px auto;
+}
+
+.employes h3 {
+    font-size: 15px;
+    margin: 0 auto;
+    color: var(--h3);
+}
+
+.employes h4 {
+    font-size: 19px;
+    margin: 10px auto;
+    color: var(--h3);
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: slider 12s ease-in-out infinite;
+}
+
+.group {
+    display: flex;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.group>div {
+    flex: 0 0 160px;
+    height: 160px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.group>div:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes slider {
+
+    0%,
+    8.35% {
+        transform: translateX(0);
+    }
+
+    16.67%,
+    25% {
+        transform: translateX(-170px);
+    }
+
+    33.33%,
+    41.66% {
+        transform: translateX(-340px);
+    }
+
+    50%,
+    58.33% {
+        transform: translateX(-510px);
+    }
+
+    66.66%,
+    75% {
+        transform: translateX(-680px);
+    }
+
+    83.33%,
+    91.66% {
+        transform: translateX(-850px);
+    }
+
+    100% {
+        transform: translateX(-1020px);
+    }
+}
+.charts{
+    border: 1px solid var(--borders);
+    width: 52%;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    height: 450px;
+}
+.charts .revenueupdate {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    
+    padding: 10px;
+}
+
+.revenueupdate .heading {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+
+.revenueupdate .heading h3 {
+    font-size: 16px;
+}
+
+.revenueupdate .heading p {
+    font-size: 13px;
+    color: gray;
+}
+
+.revenueupdate .select select {
+    padding: 5px;
+    border: 1px solid var(--borders);
+}
+
+.chart .box1{
+padding: 15px;
+border-bottom: 1px dotted var(--borders);
+position: relative;
+left: 7%;
+width: 87%;
+ }
+ .para{
+    font-size: 9px;
+    color: var(--scrollbar);
+    position: relative;
+   left: 4%;
+   bottom: 5px;
+   
+ }
+ .month{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    color:  var(--scrollbar);
+
+ }
+ .month .paraa{
+    font-size: 12px;
+    position: relative;
+    left: 10%;
+ }
+ .bar{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    position: relative;
+    bottom: 198px;
+    left: 11%;
+ }
+ 
+ .bar1 .div1{
+    width: 10px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  background-color:var(--bar1);
+ }.bar1 .div2{
+    width: 10px;
+    height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  background-color:var(--bar2);
+ }.bar2 .div3{
+    width: 10px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  background-color:var(--bar1);
+ }.bar2 .div4{
+    width: 10px;
+    height: 80px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ background-color:var(--bar2);
+ }
+ .bar3 .div5{
+    width: 10px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  background-color:var(--bar1);
+ }.bar3 .div6{
+    width: 10px;
+    height: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ background-color:var(--bar2);
+ }
+ .bar4 {
+ margin-left: 5px;
+ }
+ .bar4 .div7{
+    width: 10px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  background-color:var(--bar1);
+ }.bar4 .div8{
+    width: 10px;
+    height: 70px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ background-color:var(--bar2);
+ }
+ .bar5 {
+ margin-left: 5px;
+ }
+ .bar5 .div9{
+    width: 10px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  background-color:var(--bar1);
+ }.bar5 .div10{
+    width: 10px;
+     height: 94px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ background-color:var(--bar2);
+ }
+ .bar6 {
+ margin-left: 5px;
+ position: relative;
+ bottom: 20px;
+ }
+ .bar6 .div11{
+    width: 10px;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  background-color:var(--bar1);
+ }.bar6 .div12{
+    width: 10px;
+    height: 50px;
+  
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ background-color:var(--bar2);
+ }
+ .bar7 {
+ margin-left: 5px;
+ position: relative;
+ bottom: 10px;
+ }
+  .bar8 {
+ margin-left: 5px;
+ position: relative;
+ bottom: 15px;
+ }
+   .bar9 {
+ margin-left: 5px;
+ position: relative;
+ bottom: 39px;
+ }
+   .bar10 {
+ margin-left: 5px;
+ position: relative;
+ bottom: 10px;
+ }
+  .bar11 {
+ margin-left: 5px;
+ 
+ }
+  .bar12 {
+ margin-left: 5px;
+ position: relative;
+ bottom: 20px;
+ }
+ .bar7 .div13{
+    width: 10px;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  background-color:var(--bar1);
+ }.bar7 .div14{
+    width: 10px;
+    
+    height: 80px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ background-color:var(--bar2);
+ }.bar8 .div15{
+    width: 10px;
+    height: 65px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  background-color:var(--bar1);
+ }.bar8 .div16{
+    width: 10px;
+    height: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ background-color:var(--bar2);
+ }.bar9 .div17{
+    width: 10px;
+    height: 90px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  background-color:var(--bar1);
+ }.bar9 .div18{
+    width: 10px;
+     height: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ background-color:var(--bar2);
+ }.bar10 .div19{
+    width: 10px;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  background-color:var(--bar1);
+ }.bar10 .div20{
+    width: 10px;
+     height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ background-color:var(--bar2);
+ }.bar11 .div21{
+    width: 10px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  background-color:var(--bar1);
+ }
+ .bar11 .div22{
+    width: 10px;
+    height: 80px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ background-color:var(--bar2);
+ }
+ .bar12 .div23{
+    width: 10px;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  background-color:var(--bar1);
+ }.bar12 .div24{
+    width: 10px;
+    height: 120px;
+     
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ background-color:var(--bar2);
+ }
+.textbox{
+  width: 15%;
+height: 100px;
+transform: none;
+margin: 0;
+position: fixed;
+pointer-events: none;
+display: none;
+font-size: 12px;
+font-family: sans-serif;
+color: var(--navbar);
+background: var(--tooltip-bg);
+border-radius: 4px;
+z-index: 10px;
+box-shadow: 0px 2px 5px var(--box-shadow);
+}
+.textbox h4{
+    border-bottom: 1px solid var(--navbar);
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.textbox p{
+    padding: 10px;
+    font-size: 14px;
+}
+.textbox.active{
+    display: block;
+}
+.chart{
+    width: 100%;
+
+}
+
+.yearlybreakup{
+    margin-bottom: 5px;
+    width: 28%;
+    height: 190px;
+    position: relative;
+    bottom: 450px;
+    left: 52.5%;
+    border-radius: 5px;
+    border: 1px solid var(--borders);
+    padding: 10px;
+    
+}
+
+.yearlybreakup h3{
+padding-top: 20px;
+padding-left: 10px;
+}
+.yearlybreakup h4{
+padding-top: 20px;
+padding-left: 10px;
+font-size: 21px;
+}
+.yearlybreakup .dott{
+    margin-top: 15px;
+    margin-right: 10px;
+    background-color: var(--dot);
+    width: 25px;
+    border-radius: 10px;
+}
+.dott i{
+    margin-left: 6px;
+    font-size: 12px;
+}
+.yearlybreakup .texts .nine{
+    position: relative;
+    left: 8%;
+    bottom: 19px;
+}
+.texts .last {
+    color: var(--scrollbar);
+   position: relative;
+    left: 18%;
+    bottom: 37px; 
+}
+.yearlysbreakup .texts .nine{
+    position: relative;
+    left: 8%;
+    bottom: 19px;
+}
+.years{
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+}
+.texts .dot1{
+    padding: 5px;
+    background-color:var(--bar1) ;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+     margin-top: 5px;
+}
+.texts .dot2{
+    padding: 5px;
+    background-color:var(--scrollbar) ;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+     margin-top: 5px;
+}
+.texts .dot3{
+    padding: 5px;
+    background-color:var(--bar2) ;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+}
+
+.yearlybreakup .graph{
+    position: relative;
+    left: 55%;
+    bottom: 150px;
+       width: 140px;
+       height: 140px;
+    border-radius: 50%;
+    background: conic-gradient(
+      var(--bar1) 0% 40%,
+    var(--scrollbar) 40% 75%,
+ var(--bar2) 75% 100%
+    )  
+}
+.yearlybreakup .graph::before{
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    background-color: var(--navbar);
+    border-radius: 50%;
+}
+.yearlysbreakup .dott1{
+    margin-top: 15px;
+    margin-right: 10px;
+    background-color: var(--dot1);
+    width: 20px;
+    border-radius: 10px;
+}
+.yearlysbreakup .dott1 i{
+    margin-left: 6px;
+    font-size: 10px;
+}
+.dollar{
+    padding: 10px;
+    position: relative;
+    bottom: 65%;
+    left: 80%;
+border-radius: 50%;
+background-color: var(--bar2) ;
+width: 50px;
+height: 50px;
+}
+.dollar h4{
+    font-size: 25px;
+    position: relative;
+    bottom: 60%;
+    right: 5%;
+}
+
+.chartbox{
+    position: relative;
+    width: 100%;
+    background: var(--navbar);
+    font-family: sans-serif;
+    bottom: 35%;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+.tooltip{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--box-shadow);
+    color: var(--navbar);
+padding: 6px 12px;
+border-radius: 6px;
+font-size: 13px;
+font-weight: bold;
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.chartbox:has(.point:hover) .tooltip{
+opacity: 1;
+visibility: visible;
+}
+
+svg{
+    width: 100%;
+    height: 120px;
+    position: relative;
+    border-bottom: 1px solid var(--borders);
+    bottom: 22px;
+}
+
+.line{
+    fill: none;
+    stroke: var(--bar2);
+    stroke-width: 1;
+}
+.area{
+    fill: url(#grad);
+}
+
+.point{
+    fill: var(--bar2);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.point:hover{
+    opacity: 1;
+}
+.yearlysbreakup{
+    margin-bottom: 5px;
+    width: 28%;
+    height: 255px;
+    position: relative;
+    bottom: 450px;
+    left: 52.5%;
+    border-radius: 5px;
+    border: 1px solid var(--borders);
+    padding: 10px;
+    
+}
+
+.yearlysbreakup h3{
+padding-top: 20px;
+padding-left: 10px;
+}
+.yearlysbreakup h4{
+padding-top: 20px;
+padding-left: 10px;
+font-size: 21px;
+}
+.lastsec{
+    width: 100%;
+position: relative;
+margin-top: -400px;
+display: flex;
+flex-direction: row;
+gap: 15px;
+}
+.lastsec .lastperformance {
+    width: 25%;
+    border: 1px solid var(--borders);
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    padding: 15px;
+
+}
+.transaction h3{
+    font-size: 18px;
+}
+.transaction h4{
+    font-size: 13px;
+    color: var(--scrollbar);
+    font-weight: normal;
+}
+.works{
+    color: var(--scrollbar);
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+}
+.works .time{
+font-size: 14px;
+
+}
+.works .timedot{
+    margin-top: 4px;
+    border: 1px solid var(--timedot);
+    padding: 3px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+.works .description{
+    font-size: 13px;
+}
+.works .one{
+    color: var(--text);
+        font-size: 14px;
+display: block;
+margin-bottom: 5px;
+}
+.popular{
+ display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    width: 54%;
+    padding: 15px;
+border: 1px solid var(--borders);
+}
+
+.product h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.popular .row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.row1 .rowtext{
+    font-weight: bold;
+}
+.row1 .rowtext1{
+    margin-top: 20px;
+    font-size: 14px;
+   
+}
+.row1 .description{
+    font-size: 13px;
+    color: var(--scrollbar);
+    margin-right: 15px;
+    margin-top: 20px;
+}
+.row1 .description2{
+    color: var(--scrollbar);
+    font-style: 12px;
+    display: block;
+}
+.row1 .divtext{
+    width: 50px;
+    height: 30px;
+  background-color: var(--divtext);
+    color: var(--navbar);
+    font-size: 13px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 50px;
+}
+.row1 .divtext2{
+    width: 60px;
+    height: 30px;
+    background-color: var(--divtext1);
+    color: var(--navbar);
+    font-size: 13px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 40px;
+}
+.row1 .divtext3{
+    width: 50px;
+    height: 30px;
+    background-color: var(--divtext);
+    color: var(--navbar);
+    font-size: 13px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 40px;
+}
+.row1 .divtext4{
+    width: 50px;
+    height: 30px;
+    background-color: var(--divtext3);
+    color: var(--navbar);
+    font-size: 13px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 50px;
+}
+footer{
+    width: 81.4%;
+    height: 60px;
+    padding: 20px;
+    text-align: center;
+    border-top  : 1px solid var(--borders);
+    position: relative;
+    
+    left: 19%;
+}
+footer a{
+    color: var(--a);
+}

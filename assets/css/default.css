@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+  padding: 0;
+  margin: 0;
+    width: 100%;
+overflow-x: hidden;
+
+}
+body{
+    overflow-y: auto;
+}
+:root{
+    --navbar:rgb(255, 255, 255);
+    --borders:rgb(247, 243, 243);
+    --gradient:#fff;
+    --button-gr:#15CEBD;
+    --button-gra:#548AFE;
+    --button-grad:#E02FD6;
+    --button-gradi:#FDB54E;
+--scrollbar:#999;
+--modern:#5d87ff;
+--modern-text:white;
+--pro:#b9e6ff;
+--pro-text:#2db1f8;
+--box:#e1f2ff;
+--box-bg:rgb(82, 82, 255);
+--welcome-box:#c8edfa;
+--projects:rgb(195, 240, 248);
+--clients:rgb(238, 248, 195);
+--events:rgb(212, 248, 195);
+--employees:rgb(248, 234, 195);
+--report:rgb(248, 196, 235);
+--payroll:rgb(248, 197, 197);
+--h3:rgb(89, 159, 250);
+--bar1:rgb(76, 116, 248);
+--bar2:rgb(87, 227, 252);
+--tooltip-bg:#2c3e50;
+--box-shadow:rgba(0,0,0,0.2);
+--dot:rgb(199, 250, 199);
+--dot1:rgb(255, 174, 154);
+--timedot:red;
+--divtext:#aa49fa;
+--divtext1:#4eabf7;
+--divtext3:#fa4646;
+--a:#1379cc;
+--text:black;
+}
